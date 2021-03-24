@@ -1,0 +1,29 @@
+﻿<Window x:Class="semaphore_training_system.compareWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="报文评分" Height="300" Width="700">
+    <Window.Resources>
+        <ResourceDictionary Source="Style.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Label Content="正确报文" HorizontalAlignment="Left" Height="30" Margin="28,30,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
+        <Label Content="接收报文" HorizontalAlignment="Left" Height="27" Margin="28,68,0,0" VerticalAlignment="Top" Width="74" FontSize="14"/>
+        <Label Content="评分标准：满分100分，发错一组扣35分。" HorizontalAlignment="Left" Height="28" Margin="28,124,0,0" VerticalAlignment="Top" Width="289" FontSize="14"/>
+        <Label Name="wrongTime" Content="发错：  0  组" HorizontalAlignment="Left" Height="28" Margin="28,174,0,0" VerticalAlignment="Top" Width="97" FontSize="14"/>
+        <Label Name="score" Content="得分： 100 分" HorizontalAlignment="Left" Height="32" Margin="28,207,0,0" VerticalAlignment="Top" Width="106" FontSize="14"/>
+        <Button Name="exit" Content="退    出" HorizontalAlignment="Left" Height="33" Margin="541,216,0,0" VerticalAlignment="Top" Width="91" FontSize="14" Click="exit_Click" Style="{StaticResource DefaultButton}"/>
+        <TextBlock Name="rightMasssge" HorizontalAlignment="Left" Height="24" Margin="118,36,0,0" TextWrapping="Wrap" Text="ABCDEFGHIJKLMNOPQRSTUVWXYZ" VerticalAlignment="Top" Width="564" FontFamily="GungsuhChe" FontSize="16"/>
+        <TextBlock Name="recordMasssge" HorizontalAlignment="Left" Height="24" Margin="118,71,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="564" FontFamily="GungsuhChe" FontSize="16"/>
+        <TextBlock Name="tB" HorizontalAlignment="Left" Height="98" Margin="427,113,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="236" FontFamily="GungsuhChe" Visibility="Hidden"
+                >
+            <Run Foreground="Gold">HHE</Run>
+            <Run Foreground="Maroon">Ee</Run>
+            <Run Foreground="Blue">l</Run>
+            <Run Foreground="Orange">l</Run>
+            <Run Foreground="Brown">o</Run>
+        </TextBlock>
+
+
+
+    </Grid>
+</Window>

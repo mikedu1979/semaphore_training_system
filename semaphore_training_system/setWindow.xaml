@@ -1,0 +1,20 @@
+﻿<Window x:Class="semaphore_training_system.setWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="报文参数设置" Height="300" Width="300">
+    <Window.Resources>
+        <ResourceDictionary Source="Style.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <Label Content="报文编号" HorizontalAlignment="Left" Height="24" Margin="28,54,0,0" VerticalAlignment="Top" Width="62" />
+        <Label Content="速度设置" HorizontalAlignment="Left" Height="24" Margin="28,91,0,0" VerticalAlignment="Top" Width="62"/>        
+        <Label Content="码/分" HorizontalAlignment="Left" Height="24" Margin="208,91,0,0" VerticalAlignment="Top" Width="53"/>
+        <Button Name="Cancel" Content="取   消" HorizontalAlignment="Left" Height="27" Margin="60,197,0,0" VerticalAlignment="Top" Width="77" Click="Cancel_Click" Style="{StaticResource DefaultButton}"/>
+        <Button Name="OK"     Content="确   定" HorizontalAlignment="Left" Height="27" Margin="165,197,0,0" VerticalAlignment="Top" Width="77" Click="OK_Click" Style="{StaticResource DefaultButton}"/>
+        <TextBox Name="textFileNo" HorizontalAlignment="Left" Height="24" Margin="107,54,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="99" TextAlignment="Center" FontSize="16"/>
+        <TextBox Name="textShowSpeeed" HorizontalAlignment="Left" Height="24" Margin="107,94,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="99" TextAlignment="Center" FontSize="16"/>
+        <Label Content="动作保持时间" HorizontalAlignment="Left" Height="26" Margin="17,130,0,0" VerticalAlignment="Top" Width="90" />
+        <TextBox Name="textGestureConfirmTime" Text="1" HorizontalAlignment="Left" Height="26" Margin="107,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="99" TextAlignment="Center" FontSize="16"/>
+        <Label Content="秒" HorizontalAlignment="Left" Height="26" Margin="208,130,0,0" VerticalAlignment="Top" Width="25"/>
+    </Grid>
+</Window>
